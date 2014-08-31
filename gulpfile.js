@@ -102,6 +102,15 @@ gulp.task('styles', function () {
     .pipe($.size({title: 'styles'}));
 });
 
+// create filenames with revving
+gulp.task('rev', ['html'], function() {
+  return gulp.src(['dist/**/*.css', 'dist/**/*.js'])
+    .pipe($.rev())
+    .pipe(gulp.dest('dist'))
+    .pipe($.rev.manifest())
+    .pipe(gulp.dest('dist'));
+});
+
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
@@ -177,7 +186,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'rev'], cb);
 });
 
 // Run PageSpeed Insights
