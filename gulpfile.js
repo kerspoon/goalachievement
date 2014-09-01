@@ -102,15 +102,6 @@ gulp.task('styles', function () {
     .pipe($.size({title: 'styles'}));
 });
 
-// create filenames with revving
-gulp.task('rev', ['html'], function() {
-  return gulp.src(['dist/**/*.css', 'dist/**/*.js'])
-    .pipe($.rev())
-    .pipe(gulp.dest('dist'))
-    .pipe($.rev.manifest())
-    .pipe(gulp.dest('dist'));
-});
-
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
@@ -136,8 +127,10 @@ gulp.task('html', function () {
     // Concatenate And Minify Styles
     // In case you are still using useref build blocks
     .pipe($.if('*.css', $.csso()))
+    .pipe($.rev())
     .pipe(assets.restore())
     .pipe($.useref())
+    .pipe($.revReplace())
     // Update Production Style Guide Paths
     .pipe($.replace('components/components.css', 'components/main.min.css'))
     // Minify Any HTML
@@ -186,7 +179,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'rev'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights
