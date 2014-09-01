@@ -9,9 +9,11 @@
     "gulp-changed": "^1.0.0",
     "gulp-csso": "^0.2.9",
     "gulp-flatten": "^0.0.2",
+    "gulp-front-matter": "^1.0.0",
     "gulp-if": "^1.2.1",
     "gulp-imagemin": "^1.0.0",
     "gulp-jshint": "^1.6.3",
+    "gulp-liquid": "^0.1.0",
     "gulp-load-plugins": "^0.5.3",
     "gulp-minify-html": "^0.1.4",
     "gulp-replace": "^0.4.0",
@@ -22,11 +24,15 @@
     "gulp-uglify": "^0.3.1",
     "gulp-uncss": "^0.4.5",
     "gulp-useref": "^0.6.0",
+    "gulp-util": "^3.0.1",
     "jshint-stylish": "^0.4.0",
+    "liquid-node": "^2.0.0",
     "opn": "^1.0.0",
     "psi": "^0.1.2",
     "require-dir": "^0.1.0",
-    "run-sequence": "^0.3.6"
+    "run-sequence": "^0.3.6",
+    "through2": "^0.6.1",
+    "underscore": "^1.7.0"
   },
   "engines": {
     "node": ">=0.10.0"

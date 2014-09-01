@@ -27,6 +27,7 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var liquid = require('./tasks/liquid');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -102,11 +103,14 @@ gulp.task('styles', function () {
     .pipe($.size({title: 'styles'}));
 });
 
+
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
   var assets = $.useref.assets({searchPath: '{.tmp,app}'});
 
-  return gulp.src('app/**/*.html')
+  return gulp.src('app/*.html')
+    .pipe($.frontMatter({property: 'page', remove: true}))
+    .pipe(liquid())
     .pipe(assets)
     // Concatenate And Minify JavaScript
     .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
@@ -144,7 +148,7 @@ gulp.task('html', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles'], function () {
+gulp.task('serve', ['styles', 'html'], function () {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -192,6 +196,3 @@ gulp.task('pagespeed', pagespeed.bind(null, {
   url: 'http://goalachievement.co.uk',
   strategy: 'mobile'
 }));
-
-// Load custom tasks from the `tasks` directory
-try { require('require-dir')('tasks'); } catch (err) {}
