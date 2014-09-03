@@ -103,14 +103,19 @@ gulp.task('styles', function () {
     .pipe($.size({title: 'styles'}));
 });
 
-
-// Scan Your HTML For Assets & Optimize Them
-gulp.task('html', function () {
-  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
-
-  return gulp.src('app/*.html')
+gulp.task('liquid', function () {
+  return gulp.src(['app/**/*.html', '!app/template/*.html'])
     .pipe($.frontMatter({property: 'page', remove: true}))
     .pipe(liquid())
+    .pipe(gulp.dest('.tmp'))
+    .pipe($.size({title: 'liquid'}));
+});
+
+// Scan Your HTML For Assets & Optimize Them
+gulp.task('html', ['liquid'], function () {
+  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
+
+  return gulp.src('.tmp/**/*.html')
     .pipe(assets)
     // Concatenate And Minify JavaScript
     .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
@@ -119,8 +124,8 @@ gulp.task('html', function () {
     // the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/index.html',
-        'app/styleguide.html'
+        '.tmp/index.html',
+        '.tmp/styleguide.html'
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [
@@ -148,7 +153,7 @@ gulp.task('html', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', ['styles', 'html'], function () {
+gulp.task('serve', ['styles', 'liquid'], function () {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'

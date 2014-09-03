@@ -21,18 +21,16 @@
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:css /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
   </head>
   <body>
     <header class="app-bar promote-layer">
       <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">Goal Achievement Workshops</h1>
+        <button class="menu"><img src="/images/hamburger.svg" alt="Menu"></button>
+        <h1 class="logo">{{title}}</h1>
         <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        <!-- e.g <button><i class="icon icon-star"></i></button> -->
         </section>
       </div>
     </header>
@@ -40,8 +38,9 @@
     <nav class="navdrawer-container promote-layer">
       <h4>Navigation</h4>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Get in touch</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Get in touch</a></li>
+        <li><a href="/articles">Articles</a></li>
       </ul>
     </nav>
 
@@ -59,8 +58,8 @@
 
     </main>
 
-    <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
+    <!-- build:js /scripts/main.min.js -->
+    <script src="/scripts/main.js"></script>
     <!-- endbuild -->
 
     <script>
