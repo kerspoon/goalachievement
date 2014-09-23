@@ -201,3 +201,10 @@ gulp.task('pagespeed', pagespeed.bind(null, {
   url: 'http://goalachievement.co.uk',
   strategy: 'mobile'
 }));
+
+var ftpSettings = require('./ftp-settings.json');
+
+gulp.task('deploy', ['default'], function () {
+  return gulp.src('dist/**/*')
+    .pipe($.ftp(ftpSettings));
+});
