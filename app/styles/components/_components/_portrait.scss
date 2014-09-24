@@ -9,6 +9,8 @@
   margin: auto;
   float: none;
 
+  @include type--base;
+
   @include medium {
     float: right;
   }
