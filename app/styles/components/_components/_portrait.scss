@@ -1,0 +1,21 @@
+/**
+*
+* portrait
+*
+**/
+
+.portrait {
+  width: 156px;
+  margin: auto;
+  float: none;
+
+  @include medium {
+    float: right;
+  }
+}
+
+.portrait--img {
+  background: #4285f4;
+  border: 3px solid #4285f4;
+  border-radius: 150px;
+}
