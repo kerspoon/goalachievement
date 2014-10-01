@@ -1,0 +1,420 @@
+---
+layout: app/template/none
+---
+
+<!doctype html>
+<html lang="en" class="no-js no-touch" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="description" content="Visual style guide used by this site.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="name" content="Visual Style Guide — Web Starter Kit">
+    <meta itemprop="description" content="Visual style guide used by this site.">
+
+    <link rel="stylesheet" href="styles/components.css">
+
+    <title>Visual Style Guide — Web Starter Kit</title>
+    <style>
+      .auto-gen-code-snippet {
+        display: none;
+      }
+      .auto-gen-code-visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="page--styleguide">
+
+    <div class="container">
+      <h1>Web <strong>Starter Kit</strong></h1>
+    </div>
+
+    <div class="summary-header">
+      <div class="container">
+        <h2 class="summary-header__title">Visual Style Guide</h2>
+        <ol class="summary-header__anchor-list  list-links">
+          <li class="summary-header__anchors-item"><a href="#headers">Headers</a></li>
+          <li class="summary-header__anchors-item"><a href="#spans">Span Elements</a></li>
+          <li class="summary-header__anchors-item"><a href="#lists">Lists</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="container">
+      <button id="snippet-toggle" class="button--primary">Toggle Code Snippets</button>
+    </div>
+
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+    <div class="container">
+      <a name="headers"></a>
+      <section class="styleguide__typography">
+        <h2 class="subsection-title"><strong class="subsection-number">#01</strong> Headers</h2>
+        <div class="code-sample">
+
+          <h1>h1. Bootstrap heading</h1>
+          <h2>h2. Bootstrap heading</h2>
+          <h3>h3. Bootstrap heading</h3>
+          <h4>h4. Bootstrap heading</h4>
+          <h5>h5. Bootstrap heading</h5>
+          <h6>h6. Bootstrap heading</h6>
+
+          <h1>This is a really long title that will hopefully spill on to two or more lines to see if the line spacing of titles is good</h1>
+          <h2>This is a really long title that will hopefully spill on to two or more lines to see if the line spacing of titles is good</h2>
+          <h3>This is a really long title that will hopefully spill on to two or more lines to see if the line spacing of titles is good</h3>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+
+    <div class="container">
+      <a name="spans"></a>
+      <section class="styleguide__typography">
+        <h2 class="subsection-title"><strong class="subsection-number">#02</strong> Span Elements</h2>
+        <div class="code-sample">
+
+
+          <dl>
+            <dt>a</dt>
+            <dd>
+              <a href="http://www.mozilla.com/">External Link</a>
+            </dd>
+            <dt>abbr</dt>
+            <dd>
+              Tony Blair is the prime minister of the <abbr title="United Kingdom">UK</abbr>
+            </dd>
+            <dt>del</dt>
+            <dd>
+              <del>This text has been deleted</del>
+            </dd>
+            <dt>mark</dt>
+            <dd>
+              The &lt;mark&gt; element is used to <mark>highlight</mark> text.
+            </dd>
+            <dt>ins</dt>
+            <dd>
+              <ins>This text has been inserted</ins>
+            </dd>
+            <dt>kbd</dt>
+            <dd>
+              <p>Type the following in the Run dialog: <kbd>cmd</kbd> then click the OK button.</p>
+            </dd>
+            <dt>i</dt>
+            <dd>
+              The Latin phrase <i>Veni, vidi, vici</i> is often mentioned in music, art, and literature
+            </dd>
+            <dt>em</dt>
+            <dd>
+              In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content.
+            </dd>
+            <dt>cite</dt>
+            <dd>
+              More information can be found in <cite>[ISO-0000]</cite>
+            </dd>
+            <dt>code</dt>
+            <dd>
+              Regular text. <code>This is code.</code> Regular text.
+            </dd>
+            <dt>b</dt>
+            <dd>
+              This article describes several <b>text-level</b> elements. It explains their usage in an <b>HTML</b> document.
+            </dd>
+            <dt>bdo</dt>
+            <dd>
+              <bdo dir="rtl">This text will go right to left.</bdo>
+            </dd>
+            <dt>bdi</dt>
+            <dd>
+              <p dir="ltr">This arabic word <bdi>ARABIC_PLACEHOLDER</bdi> is automatically displayed right-to-left.</p>
+            </dd>
+            <dt>meter</dt>
+            <dd>
+              Heat the oven to <meter min="200" max="500" value="350">350 degrees</meter>.
+            </dd>
+            <dt>small</dt>
+            <dd>
+              This is the first sentence.  <small>This whole sentence is in small letters.</small>
+            </dd>
+            <dt>strong</dt>
+            <dd>
+              When doing x it is <strong>imperative</strong> to do y before proceeding.
+            </dd>
+            <dt>sub</dt>
+            <dd>
+              The chemical formula of water is H<sub>2</sub>O
+            </dd>
+            <dt>sup</dt>
+            <dd>
+              This text is <sup>superscripted</sup>
+            </dd>
+            <dt>time</dt>
+            <dd>
+              The concert starts at <time>20:00</time>, took place on <time datetime="2001-05-15 19:00">May 15</time>.
+            </dd>
+            <dt>u</dt>
+            <dd>
+              <u>Today's Special</u>: Salmon
+            </dd>
+            <dt>var</dt>
+            <dd>
+              A simple equation: <var>x</var> = <var>y</var> + 2
+            </dd>
+            <dt>wbr</dt>
+            <dd>
+              http://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages
+            </dd>
+          </dl>
+
+          <p>
+            Mozilla Foundation<br>
+            1981 Landings Drive<br>
+            Building K<br>
+            Mountain View, CA 94043-0801<br>
+            USA
+          </p>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+
+
+    <div class="container">
+      <a name="lists"></a>
+      <section class="styleguide__typography">
+        <h2 class="subsection-title"><strong class="subsection-number">#03</strong> Lists</h2>
+
+        <div class="code-sample">
+          <ol>
+            <li>first item</li>
+            <li>second item
+              <ol>
+                <li>second item first subitem</li>
+                <li>second item second subitem</li>
+                <li>second item third subitem</li>
+              </ol>
+            </li>
+            <li>third item</li>
+          </ol>
+        </div>
+
+        <div class="code-sample">
+          <ul>
+            <li>first item</li>
+            <li>second item
+              <ul>
+                <li>second item first subitem</li>
+                <li>second item second subitem
+                  <ul>
+                    <li>second item second subitem first sub-subitem</li>
+                    <li>second item second subitem second sub-subitem</li>
+                    <li>second item second subitem third sub-subitem</li>
+                  </ul>
+                </li>
+                <li>second item third subitem</li>
+              </ul>
+            </li>
+            <li>third item</li>
+          </ul>
+
+          <dl>
+            <dt>Firefox</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+            <dt>Other</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+            <dt>Third</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+            <dt>Firefox</dt>
+            <dt>Mozilla Firefox</dt>
+            <dt>Fx</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+
+            <dt>Firefox</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+            <dd>The Red Panda also known as the Lesser Panda, Wah, Bear Cat or Firefox,
+                is a mostly herbivorous mammal, slightly larger than a domestic cat
+                (60 cm long).</dd>
+
+          </dl>
+
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+
+          <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit</li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ol>
+
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
+      </section>
+    </div>
+
+
+
+    <!-- ================================================================== -->
+    <!-- ================================================================== -->
+
+
+    <footer id="gc-footer">
+      <div class="container">
+        <p><a href="#">Back to top</a></p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        'use strict';
+
+        var snippetToggle = document.querySelector('#snippet-toggle');
+        var snippets;
+
+        snippetToggle.addEventListener('click', function () {
+          if (snippets) {
+            for (var i = 0; i < snippets.length; i++) {
+              snippets[i].classList.toggle('auto-gen-code-visible');
+            }
+          }
+        });
+
+        window.onload = function () {
+          createCodeSamples();
+          snippets = document.querySelectorAll('.auto-gen-code-snippet');
+        };
+
+        function createCodeSamples() {
+          var codeWrappers = document.querySelectorAll('.code-sample');
+
+          for (var i = 0; i < codeWrappers.length; i++) {
+            var codeWrapper = codeWrappers[i];
+            var clonedNodes = getClonedNonTextNodes(codeWrapper);
+
+            beautifyNodes(clonedNodes);
+
+            var preElement = document.createElement('pre');
+            var codeElement = document.createElement('code');
+
+            for (var j = 0; j < clonedNodes.length; j++) {
+              codeElement.appendChild(document.createTextNode(clonedNodes[j].outerHTML));
+
+              if (j + 1 < clonedNodes.length) {
+                codeElement.appendChild(document.createTextNode('\n'));
+              }
+            }
+
+            preElement.appendChild(codeElement);
+            preElement.classList.add('auto-gen-code-snippet');
+            preElement.classList.add('container');
+
+            var clearDiv = document.createElement('div');
+            clearDiv.classList.add('clear');
+
+            var parent = codeWrapper.parentNode;
+
+            if (codeWrapper.nextSibling) {
+              parent.insertBefore(preElement, codeWrapper.nextSibling);
+            } else {
+              parent.appendChild(preElement);
+            }
+
+            parent.insertBefore(clearDiv, preElement);
+          }
+        }
+
+        function getClonedNonTextNodes(element) {
+          var nonTextNodes = [];
+          var childNodes = element.childNodes;
+
+          for (var i = 0; i < childNodes.length; i++) {
+            var childElement = childNodes[i];
+
+            if (childElement.nodeType !== 3) {
+              // Found a valid child element
+              nonTextNodes.push(childElement.cloneNode(true));
+            }
+          }
+
+          return nonTextNodes;
+        }
+
+        function beautifyNodes(elements) {
+          for (var i = 0; i < elements.length; i++) {
+            beautifyNode(elements[i], 0);
+          }
+        }
+
+        function beautifyNode(element, depth) {
+          var childNodes = element.childNodes;
+          var singleIndent = '    ';
+          var currentDepthSpacing = '';
+
+          for (var i = 0; i < depth; i++) {
+            currentDepthSpacing += singleIndent;
+          }
+
+          var nextDepthSpacing = currentDepthSpacing + singleIndent;
+
+          for (var j = 0; j < childNodes.length; j++) {
+            var childElement = childNodes[j];
+
+            if (childElement.nodeType === 3) {
+              // found a text node
+              if (childElement.nodeValue.indexOf('\n') >= 0) {
+                if (j + 1 < childNodes.length) {
+                  childElement.nodeValue = '\n' + nextDepthSpacing;
+                } else {
+                  childElement.nodeValue = '\n' + currentDepthSpacing;
+                }
+              }
+            } else {
+              beautifyNode(childElement, depth + 1);
+            }
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
