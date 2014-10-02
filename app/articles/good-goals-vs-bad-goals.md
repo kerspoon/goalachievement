@@ -1,0 +1,31 @@
+---
+layout: app/template/default
+title: Good goals vs. bad goals
+---
+
+## Aims and Objectives
+
+Some goals are more easy to achieve than others. There is a big difference between the success rates of goals such as "lose weight" compared to "only purchase skimmed milk". But why? Especially when they were put in place to reach the same aim. The question this raises is what makes an achievable goal, actually scrap that question, the one we care about is how can we make all our goals achievable.
+
+I'm not saying there is no use in having "lose weight" as a goal - given the percentage of overweight people it is probably an admirable one. The key is to know the difference between aims and objectives. My aim is to lose weight, to achieve that aim I have the objective of only purchasing skimmed milk. An aim sets a destination - you should have happy feelings when you think about having achieved it. The objective is the route, even more specifically, it is the next step. The more you can be clear in what that is, and why you are taking it, the better.
+
+- **Aims** are a snapshot of where you want to be. e.g. I want to be thinner.
+- **Objectives** are the things you do to get you there. e.g. I wont eat full fat milk.
+
+Both are useful but you need to realise that on their own aims don't get achieved. You need to turn each of your aims into one or more good objectives.
+
+## Good Objectives
+
+You want to focus on changes that are:
+
+1. Likely to be carried out,
+1. Likely to cause a step towards the change you want,
+1. Give rapid feedback as to their progress (small steps, with noticeable changes).
+
+The most likely thing to be carried out is one where you don't have to think or do anything differently. A good example: not owning a TV will reduce the amount of TV you watch. The worst kind is where you have to make lots of decisions about when and how to carry out the task. When you have a task that isn't purely a change of situation (such as the TV example) then implementation intentions are a great way to give the change the best chance of being carried out.
+
+Although "every a journey of a thousand miles begins with a single step" so does a step in the wrong direction. Here we take a leaf from the solutions focused brief therapy (SFBT) school of thought and amplify things that have worked in the past as a means to find steps that go in the right direction. Mental Contrasting also helps with this step; above SFBT it adds looking for potential obstacles which: 1, mentally prepares you; 2, allows you to introduce strategies for dealing with obstacles; and 3, it will tell you when a task simply isn't worth the effort.
+
+If you had two goals that both had a fair chance of being carried out and causing the change you want the best to choose is the one that is the quickest to let you know whether it is working. Most of the things you try will not work; they may not make much difference, or you might keep forgetting to do them, or millions of other reasons why perfectly reasonable plans fail. That is not a bad thing. It does however tell you what to expect and how to pick your goals. You want to cultivate a mindset of practice. A key to good practice is being comfortable trying things that might fail and not losing hope when that happens.
+
+A great way to get started doing this is <a href="/articles/mental-contrasting-and-implementation-intentions.html">mental contrasting and implementation intentions (MCII)</a>
