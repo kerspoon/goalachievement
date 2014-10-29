@@ -3,17 +3,22 @@ layout: app/template/default
 title: How to do a quick literature review
 ---
 
-Here is my method for a quick (one-three day) literature review on a specific topic. It assumes you already know the area but are looking for the cutting edge. If you are not at that then I would look for (in vague order of simplicity):
+Here is my method for a quick (one-three day) literature review on a specific topic. It assumes you already know the area but are looking for the cutting edge. If you are not at that stage yet then I would look for (in vague order of simplicity):
 
 1. Wikipedia articles,
 1. Recent section(s) of a field-specific encyclopedia. For example "The Routledge Encyclopedia of X". "Compendium of X". "The Cambridge Companion to X", "Oxford Handbook of X".
 1. Read or skim-read an entry-level university textbook on the subject. Search the leading universities reading lists for recommendations.
 1. Find scholarly review (or 'survey') articles on my chosen topic from the past five years (the more recent, the better).
-1. Gather a set of search terms trying to keep them as specific as possible. Based on a variety of searches download about 30 papers from IEEEexplore and google scholar based upon titles and names. Read the abstract of each just to see if it is relevant, discard those that are not.
 
-From here I read the title and abstract again to make sure I understand their basic premise. Next I read the references, I'm looking for names, institutions and specific entries that come up a lot or seem very pertinent. I keep a log of any common ones I find. I'm also looking for the terminology used in the titles in the references, again logging the best key phrases (I'll come back to this). The purpose of this is to understand where this work fits relative to its peers and to find even better papers.
+Once you have a good overview and understand of the general topic you can being to answer specific questions.
 
-The note file will contain:
+To start gather a set of search terms trying to keep them as specific as possible. Based on a variety of searches download about 30 papers from and google scholar based upon titles and names. Read the abstract of each just to see if it is relevant, discard those that are not.
+
+From here I read the title and abstract again to make sure I understand their basic premise. Next I read the references, I'm looking for names, institutions and specific entries that come up a lot or seem very pertinent. I keep a log of any common ones I find. I'm also looking for the terminology used in the titles in the references, again logging the best key phrases (I'll come back to this).
+
+The purpose of this is to understand where this work fits relative to its peers and to find even better papers.
+
+The notes file will contain:
 
 - key terms (e.g. the literature uses "affective neuroscience" instead of "science of emotion")
 - key researchers (e.g. J.Slootweg)
@@ -29,7 +34,7 @@ Now I should know if it is well researched (from the references) and if I actual
 
 After this I go back and make a new list of search terms based upon the key phrases. I will specifically be looking out for the names and institutes that came up in my first set of searches but obviously I don't only go for them. Then it's the same process. I do this until I've got maybe 20 papers that are worth me understanding.
 
-If I find one particular person that comes up all the time I will search specifically for them and go to their university webpage to see what they are doing. I have three people who I kept a file on, I read everything one guy had written.
+If I find one particular person that comes up all the time I will search specifically for them and go to their university webpage to see what they are doing. I have three people who I kept a file on, I have read everything one guy had written.
 
 So the order is:
 - Abstract
@@ -48,4 +53,7 @@ There are a few review articles where everything could be highlighted, be happy.
 
 As a little aside I find it useful to write the year and how useful the paper is in big writing at the top and I only really highlight the best parts of that paper. Highlighting is to make stuff stand out.
 
-TL.DR. Make a first pass very quickly and work out the key people, places and phrases/words. Then use that list to find the rest.
+
+Summary: Make a first pass very quickly and work out the key people, places and phrases/words. Then use that list to find even better paper to read and only bother reading those in detail.
+
+

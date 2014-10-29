@@ -11,7 +11,7 @@ I start by reading through my notes on the goals I have set each month for the l
 
 Next comes thinking up potential goals for each of the following categories. They don't have to be good ones, the list will be cut down later to just the things I really care about. The idea behind this is that focusing on specific areas for short periods of time produces better ideas than freely thinking about it for a long period.
 
-## Roles, Legacy and Knowledge
+## 2. Roles, Legacy and Knowledge
 
 This section is mostly taken from "what color is your parachute".
 
