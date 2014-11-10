@@ -48,3 +48,5 @@ When you have come up with the goals **rank them by importance**: I use low, med
 Finally write a couple of sentences on how that process went and how you think you could do it better next time.
 
 TODO: link to google docs template.
+TODO: look through my old noteboox for the steps I took to do this. I have this written down somewhere else!.
+
