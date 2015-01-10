@@ -73,6 +73,16 @@ gulp.task('copy', function () {
     .pipe($.size({title: 'copy'}));
 });
 
+// Copy all assets
+gulp.task('assets', function () {
+  return gulp.src([
+    'app/assets/**.*',
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/assets'))
+    .pipe($.size({title: 'copy assets'}));
+});
+
 // Copy Web Fonts To Dist
 gulp.task('fonts', function () {
   return gulp.src(['app/fonts/**'])
@@ -89,7 +99,7 @@ gulp.task('styles', function () {
       'app/styles/components/components.scss'
     ])
     .pipe($.changed('styles', {extension: '.scss'}))
-    .pipe($.rubySass({
+    .pipe($.sass({
         style: 'expanded',
         precision: 10
       })
@@ -188,7 +198,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy', 'assets'], cb);
 });
 
 // Run PageSpeed Insights
